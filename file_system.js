@@ -10,21 +10,11 @@ const fs = require('fs')
 //     console.error(error)
 //  }
 
- const getFile = (dir, files= [])=>{
-    const fileList = fs.readdirSync(dir)
-
-    for(const file of fileList){
-        const name = `${dir}/${file}`
-
-    if(fs.statSync(name).isDirectory()){
-        getFile(name, files)
-    } else{
-        files.push(name)
-    }
-    }
-    console.log(files)
- }
-
- const filesInDir = getFile('Node')
- console.log(filesInDir);
+const testFolder = '../Node/'
+const fileList = []
+fs.readdirSync(testFolder, {withFileTypes: true})
+.filter(item => !item.isDirectory())
+.map(item => fileList.push(item.name))
  
+  console.log(fileList);
+  
