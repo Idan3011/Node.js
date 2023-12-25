@@ -7,3 +7,11 @@
 // A. It allows us to build interfaces that react whenever the user hovers the mouse over them.
 // B. It is an open-source, flexible, fast, light-weighted framework.
 // C. It is an interpreted scripting language, and the code can only be executed and run in a web browser
+
+
+const getNotes = ()=>{
+    return 'Your Notes...'
+    
+}
+
+module.exports= getNotes
