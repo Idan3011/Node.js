@@ -1,0 +1,38 @@
+.slider-container {
+  width: 100%;
+}
+
+div.card-container {
+  display: flex !important;
+  width: 15rem;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+  padding: 0.5rem;
+  text-align: center;
+  flex: 0 0 auto;
+}
+
+.card-container h4 {
+  font-size: 1.1rem;
+  font-family: "Bebas Neue", sans-serif;
+}
+.card-container img {
+  width: 67%;
+  display: block;
+  margin: 0 auto;
+  height: 9rem;
+  border-radius: 0.5rem;
+}
+
+div.progress {
+  height: 10px;
+  width: 77% !important;
+  margin-left: 1.7rem;
+}
+
+@media (max-width: 412px) {
+  .card-container {
+    width: 80% !important;
+  }
+}

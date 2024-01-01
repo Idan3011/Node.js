@@ -1,0 +1,19 @@
+.MainPage {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  overflow-x: hidden
+}
+
+.MainPage input[type="text"] {
+  margin-top: 4rem;
+  width: 19rem;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-weight: lighter;
+  letter-spacing: 0.05rem;
+  border-radius: 0.4rem;
+}

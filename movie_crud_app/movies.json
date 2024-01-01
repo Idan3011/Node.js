@@ -1,5 +1,34 @@
 [
   {
+    "Title": "Avatar",
+    "Year": "2009",
+    "Rated": "PG-13",
+    "Released": "18 Dec 2009",
+    "Runtime": "162 min",
+    "Genre": "Action, Adventure, Fantasy",
+    "Director": "James Cameron",
+    "Writer": "James Cameron",
+    "Actors": "Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang",
+    "Plot": "A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+    "Language": "English, Spanish",
+    "Country": "USA, UK",
+    "Awards": "Won 3 Oscars. Another 80 wins & 121 nominations.",
+    "Poster": "http://ia.media-imdb.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg",
+    "Metascore": "83",
+    "imdbRating": "7.9",
+    "imdbVotes": "890,617",
+    "imdbID": "tt0499549",
+    "Type": "movie",
+    "Response": "True",
+    "Images": [
+      "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEyOTYyMzUxNl5BMl5BanBnXkFtZTcwNTg0MTUzNA@@._V1_SX1500_CR0,0,1500,999_AL_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/M/MV5BNzM2MDk3MTcyMV5BMl5BanBnXkFtZTcwNjg0MTUzNA@@._V1_SX1777_CR0,0,1777,999_AL_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY2ODQ3NjMyMl5BMl5BanBnXkFtZTcwODg0MTUzNA@@._V1_SX1777_CR0,0,1777,999_AL_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/M/MV5BMTMxOTEwNDcxN15BMl5BanBnXkFtZTcwOTg0MTUzNA@@._V1_SX1777_CR0,0,1777,999_AL_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYxMDg1Nzk1MV5BMl5BanBnXkFtZTcwMDk0MTUzNA@@._V1_SX1500_CR0,0,1500,999_AL_.jpg"
+    ]
+  },
+  {
     "Title": "I Am Legend",
     "Year": "2007",
     "Rated": "PG-13",
@@ -83,6 +112,35 @@
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMTExMDk1MDE4NzVeQTJeQWpwZ15BbWU4MDM4NDM0ODAx._V1_SX1500_CR0,0,1500,999_AL_.jpg",
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg3MTY4NDk4Nl5BMl5BanBnXkFtZTgwNjc0MzQ4MDE@._V1_SX1500_CR0,0,1500,999_AL_.jpg",
       "https://images-na.ssl-images-amazon.com/images/M/MV5BMTgzMTg4MDI0Ml5BMl5BanBnXkFtZTgwOTY0MzQ4MDE@._V1_SY1000_CR0,0,1553,1000_AL_.jpg"
+    ]
+  },
+  {
+    "Title": "Interstellar",
+    "Year": "2014",
+    "Rated": "PG-13",
+    "Released": "07 Nov 2014",
+    "Runtime": "169 min",
+    "Genre": "Adventure, Drama, Sci-Fi",
+    "Director": "Christopher Nolan",
+    "Writer": "Jonathan Nolan, Christopher Nolan",
+    "Actors": "Ellen Burstyn, Matthew McConaughey, Mackenzie Foy, John Lithgow",
+    "Plot": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+    "Language": "English",
+    "Country": "USA, UK",
+    "Awards": "Won 1 Oscar. Another 39 wins & 134 nominations.",
+    "Poster": "http://ia.media-imdb.com/images/M/MV5BMjIxNTU4MzY4MF5BMl5BanBnXkFtZTgwMzM4ODI3MjE@._V1_SX300.jpg",
+    "Metascore": "74",
+    "imdbRating": "8.6",
+    "imdbVotes": "937,412",
+    "imdbID": "tt0816692",
+    "Type": "movie",
+    "Response": "True",
+    "Images": [
+      "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA3NTEwOTMxMV5BMl5BanBnXkFtZTgwMjMyODgxMzE@._V1_SX1500_CR0,0,1500,999_AL_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/M/MV5BMzQ5ODE2MzEwM15BMl5BanBnXkFtZTgwMTMyODgxMzE@._V1_SX1500_CR0,0,1500,999_AL_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg4Njk4MzY0Nl5BMl5BanBnXkFtZTgwMzIyODgxMzE@._V1_SX1500_CR0,0,1500,999_AL_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/M/MV5BMzE3MTM0MTc3Ml5BMl5BanBnXkFtZTgwMDIyODgxMzE@._V1_SX1500_CR0,0,1500,999_AL_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/M/MV5BNjYzNjE2NDk3N15BMl5BanBnXkFtZTgwNzEyODgxMzE@._V1_SX1500_CR0,0,1500,999_AL_.jpg"
     ]
   },
   {

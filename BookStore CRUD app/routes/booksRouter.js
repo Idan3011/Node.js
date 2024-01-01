@@ -1,5 +1,5 @@
 import express from 'express'
-import {  deleteBook, getAllBooks ,getBookByTitle, updateBook, getbookById } from '../controllers/booksControllers.js'
+import {  deleteBook, getAllBooks ,getBookByTitle, updateBook, getbookById, searchBook } from '../controllers/booksControllers.js'
 
 // createBook,
 
@@ -26,4 +26,8 @@ router.delete('/delete/:id', deleteBook)
 //Update existing Book 
 
 router.put('/updateBook/:id', updateBook)
+
+//search books by Genre/Title/Author
+
+router.get('/booksearch/:search', searchBook)
 export default router

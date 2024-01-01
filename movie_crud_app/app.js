@@ -2,7 +2,7 @@ import express from "express";
 import path, { parse } from "path";
 import { promises as fs } from "node:fs";
 import { fileURLToPath } from "url";
-
+import cors from 'cors'
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const pathDirectory = path.join(__dirname, "./movies.json");
@@ -10,6 +10,7 @@ const pathDirectory = path.join(__dirname, "./movies.json");
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 app.get("", (req, res) => {
   res.send("this is port 3030.");
 });
@@ -62,7 +63,7 @@ app.post("/movies", async (req, res) => {
 
     await fs.writeFile(
       pathDirectory,
-      JSON.stringify(existingArray, null, 2),
+      JSON.stringify(existingArray),
       "utf8"
     );
 
@@ -77,6 +78,7 @@ app.post("/movies", async (req, res) => {
 });
 app.delete("/deleteMovie/:movieTitle", async (req, res) => {
   const movieReqDelete = req.params.movieTitle;
+  console.log('Received DELETE request for:', movieReqDelete);
   try {
     const data = await fs.readFile(pathDirectory, "utf8");
     const movies = JSON.parse(data);
@@ -90,7 +92,7 @@ app.delete("/deleteMovie/:movieTitle", async (req, res) => {
       const deletedMovie = movies.splice(movieIndex, 1)[0];
       await fs.writeFile(
         pathDirectory,
-        JSON.stringify(movies, null, 2),
+        JSON.stringify(movies),
         "utf8"
       );
       res.send(`${deletedMovie.Title} officially has been deleted!`);
