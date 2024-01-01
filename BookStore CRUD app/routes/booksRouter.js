@@ -1,5 +1,5 @@
 import express from 'express'
-import {  deleteBook, getAllBooks ,getMovieByTitle, updateBook} from '../controllers/booksControllers.js'
+import {  deleteBook, getAllBooks ,getBookByTitle, updateBook, getbookById } from '../controllers/booksControllers.js'
 
 // createBook,
 
@@ -13,9 +13,13 @@ router.get('/', getAllBooks)
 //Run's only once to get all books from mockAPI.
 // router.get('/', createBook)
 
-router.get('/title/:bookTitle', getMovieByTitle)
+router.get('/title/:bookTitle', getBookByTitle)
 
-//Delete a movie from the store using is ID
+//Get Book by is ID
+
+router.get('/id/:id', getbookById)
+
+//Delete a Book from the store using is ID
 
 router.delete('/delete/:id', deleteBook)
 

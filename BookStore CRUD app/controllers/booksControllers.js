@@ -32,7 +32,7 @@ export const getAllBooks = async (req, res, next) => {
 //   }
 // };
 
-export const getMovieByTitle = async (req, res, next) => {
+export const getBookByTitle = async (req, res, next) => {
   try {
     const bookTitle = req.params.bookTitle;
     const bookStore = readBookFromFile();
@@ -50,6 +50,22 @@ export const getMovieByTitle = async (req, res, next) => {
   }
 };
 
+export const getbookById = async(req, res, next)=>{
+  try {
+        const bookId = req.params.id
+
+        const books = readBookFromFile()
+        const book = books.find((b)=> b.id === bookId)
+        if(!book){
+          res.status(STATUS_CODE.NOT)
+          throw new Error(`there is no book with ID of: '${bookId}' in this bookstore. please try again.`)
+        }
+        res.status(STATUS_CODE.OK).send(book)
+  } catch (error) {
+    res.status(STATUS_CODE.BAD_REQUEST)
+    next(error)
+  }
+}
 export const deleteBook = async (req, res, next) => {
   try {
     const bookId = req.params.id;
