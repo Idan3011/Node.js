@@ -1,0 +1,43 @@
+.BookReview{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.BookReview img {
+    width: 10rem
+}
+.BookReview ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding:0 1rem;
+    font-size: 1.3rem;
+}
+
+.BookReview ul li {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap:0.3rem;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    
+}
+
+.BookReview ul .text {
+    color:gray
+}
+.middle-li-item{
+    border-left: 0.1rem solid gray;
+    border-right: 0.1rem solid gray;
+    margin:0 1rem
+}
+
+h4, p {
+    font-family: 'Bebas Neue', sans-serif;
+}

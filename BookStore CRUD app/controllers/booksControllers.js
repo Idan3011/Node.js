@@ -138,3 +138,26 @@ export const searchBook = (req, res, next) => {
     next(error);
   }
 };
+
+export const sortByRealeseYear = (req, res, next)=>{
+  try {
+    const bookstore = readBookFromFile()
+    const filterdBooksStore = bookstore.sort((a, b) => a.publishedIn-b.publishedIn)
+    res.status(STATUS_CODE.OK).send(filterdBooksStore)
+    
+  } catch (error) {
+    res.status(STATUS_CODE.BAD_REQUEST)
+    next(error)
+  }
+}
+export const  getBooksByPrice = (req, res, next)=>{
+  try {
+    const bookstore = readBookFromFile()
+  const filterdBooksStore = bookstore.sort((a, b) => {a.price-b.price})  
+
+  res.status(STATUS_CODE.OK).send(filterdBooksStore)
+  } catch (error) {
+    res.status(STATUS_CODE.BAD_REQUEST)
+    next(error)
+  }
+}

@@ -6,11 +6,17 @@ import "./BooksSlider.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const BooksSlider = () => {
+const BooksSlider = ({ filterdBooks,setBookReview, setBookCliked }) => {
   const [bookstore, setBookStore] = useState([]);
-
   const sliderRef = useRef(null);
+  
+  useEffect(() => {}, [filterdBooks]);
 
+
+  const handleClick =(bookName)=>{
+    setBookReview(bookName)
+    setBookCliked(true)
+  }
   const ArrowLeft = (props) => (
     <button
       onClick={() => sliderRef.current.slickPrev()}
@@ -24,11 +30,11 @@ const BooksSlider = () => {
       className="slick-arrow slick-next"
     ></button>
   );
-
+    const slidesLength = filterdBooks.length>0 ? filterdBooks.length : 2
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: Math.min(2, slidesLength),
     slidesToScroll: 1,
     prevArrow: <ArrowLeft />,
     nextArrow: <ArrowRight />,
@@ -47,11 +53,28 @@ const BooksSlider = () => {
   }, []);
   return (
     <>
-      {bookstore.length > 0 && (
+      {filterdBooks.length === 0 ? (
         <div className="slider-container">
           <Slider ref={sliderRef} {...settings}>
             {bookstore.map((book, index) => (
-              <div key={index} className="card-container">
+              <div key={index} className="card-container" onClick={()=>handleClick(book.title)}>
+                <img src={book.coverImage} alt={book.title} />
+                <h4>{book.title}</h4>
+                <ProgressBar
+                  now={book.readingProgress}
+                  striped
+                  animated
+                  label={`${book.readingProgress}%`}
+                />
+              </div>
+            ))}
+          </Slider>
+        </div>
+      ) : (
+        <div className="slider-container">
+          <Slider ref={sliderRef} {...settings}>
+            {filterdBooks.map((book, index) => (
+              <div key={index} className="card-container" onClick={()=>handleClick(book.title)} >
                 <img src={book.coverImage} alt={book.title} />
                 <h4>{book.title}</h4>
                 <ProgressBar
