@@ -34,7 +34,7 @@ export const getAllBooks = async (req, res, next) => {
 
 export const getMovieByTitle = async (req, res, next) => {
   try {
-    const bookTitle = req.params.movieTitle;
+    const bookTitle = req.params.bookTitle;
     const bookStore = readBookFromFile();
     const book = bookStore.find((b) => b.title.toLowerCase() === bookTitle.toLowerCase());
     if (!book) {
