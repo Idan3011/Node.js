@@ -120,9 +120,10 @@ export const updateBook = async (req, res, next) => {
 export const searchBook = (req, res, next) => {
   try {
     const searchVal = req.params.search;
-    const bookStore = readBookFromFile();  
-    const filterdBooksStore = bookStore.filter((book) => 
-      book.title.toLowerCase().includes(searchVal.toLowerCase()) ||
+    const bookStore = readBookFromFile();
+    const filterdBooksStore = bookStore.filter(
+      (book) =>
+        book.title.toLowerCase().includes(searchVal.toLowerCase()) ||
         book.author.name.toLowerCase().includes(searchVal.toLowerCase()) ||
         book.genre.toLowerCase().includes(searchVal.toLowerCase())
     );
@@ -139,25 +140,28 @@ export const searchBook = (req, res, next) => {
   }
 };
 
-export const sortByRealeseYear = (req, res, next)=>{
+export const sortByRealeseYear = (req, res, next) => {
   try {
-    const bookstore = readBookFromFile()
-    const filterdBooksStore = bookstore.sort((a, b) => a.publishedIn-b.publishedIn)
-    res.status(STATUS_CODE.OK).send(filterdBooksStore)
-    
+    const bookstore = readBookFromFile();
+    const filterdBooksStore = bookstore.sort((a, b) => {
+      return a.publishedIn - b.publishedIn;
+    });
+    res.status(STATUS_CODE.OK).send(filterdBooksStore);
   } catch (error) {
-    res.status(STATUS_CODE.BAD_REQUEST)
-    next(error)
+    res.status(STATUS_CODE.BAD_REQUEST);
+    next(error);
   }
-}
-export const  getBooksByPrice = (req, res, next)=>{
+};
+export const getBooksByPrice = (req, res, next) => {
   try {
-    const bookstore = readBookFromFile()
-  const filterdBooksStore = bookstore.sort((a, b) => {a.price-b.price})  
+    const bookstore = readBookFromFile();
+    const filterdBooksStore = bookstore.sort((a, b) => {
+      return b.price - a.price;
+    });
 
-  res.status(STATUS_CODE.OK).send(filterdBooksStore)
+    res.status(STATUS_CODE.OK).send(filterdBooksStore);
   } catch (error) {
-    res.status(STATUS_CODE.BAD_REQUEST)
-    next(error)
+    res.status(STATUS_CODE.BAD_REQUEST);
+    next(error);
   }
-}
+};
