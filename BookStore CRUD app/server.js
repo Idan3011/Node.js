@@ -1,13 +1,13 @@
 import "dotenv/config";
 import express from "express";
 import { errorHandler } from "./middlewares/errorMiddleware.js";
-import cors from "cors";
+import cores from "cores";
 import booksRouter from "./routes/booksRouter.js";
 
 const app = express();
 
 
-app.use(cors());
+app.use(cores());
 
 app.use(express.json());
 
