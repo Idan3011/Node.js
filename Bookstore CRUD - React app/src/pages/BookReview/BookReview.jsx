@@ -13,8 +13,6 @@ const BookReview = ({ bookReview }) => {
         const res = await axios.get(
           `/EBookStore/title/${bookReview.toLowerCase()}`
         );
-        console.log(res.data);
-
         if (res.data) {
           setBook(res.data);
         }
@@ -36,11 +34,17 @@ const BookReview = ({ bookReview }) => {
           numberOfStars={5}
           name="rating"
         />
-        <h4>{book?.tilte}</h4>
+        <h4>{book?.title}</h4>
         <ul>
-          <li>{book?.publishedIn} <span className="text">Publish in </span></li>
-          <li className="middle-li-item">{book?.pages} <span className="text">Pages </span></li>
-          <li>{book?.reviews.length} <span className="text">Total Reviews</span></li>
+          <li>
+            {book?.publishedIn} <span className="text">Publish in </span>
+          </li>
+          <li className="middle-li-item">
+            {book?.pages} <span className="text">Pages </span>
+          </li>
+          <li>
+            {book?.reviews.length} <span className="text">Total Reviews</span>
+          </li>
         </ul>
         <h4>About</h4>
         <p>{book?.description}</p>

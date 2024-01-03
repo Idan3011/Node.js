@@ -1,0 +1,316 @@
+[{
+  "_id": {
+    "$oid": "6593d2ea3d4d79fb4440f3f9"
+  },
+  "name": "resturant1",
+  "location": [
+    {
+      "city": "tel-aviv",
+      "address": "street1"
+    }
+  ],
+  "coordinates": [
+    "50",
+    "70"
+  ],
+  "cuisineType": "meditarien",
+  "kosher": true,
+  "reviews": {
+    "review1": [
+      {
+        "date": {
+          "$date": "2024-01-02T10:25:45.622Z"
+        },
+        "score": 1
+      },
+      {
+        "date": {
+          "$date": "2024-01-02T10:25:45.622Z"
+        },
+        "score": 2
+      },
+      {
+        "date": {
+          "$date": "2024-01-02T10:25:45.622Z"
+        },
+        "score": 3
+      }
+    ],
+    "review2": [
+      {
+        "date": 1,
+        "score": 1
+      },
+      {
+        "date": 2,
+        "score": 2
+      },
+      {
+        "date": 3,
+        "score": 3
+      }
+    ],
+    "review3": [
+      {
+        "date": 1,
+        "score": 1
+      },
+      {
+        "date": 2,
+        "score": 2
+      },
+      {
+        "date": 3,
+        "score": 3
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "6593d52c3d4d79fb4440f3fa"
+  },
+  "name": "resturant2",
+  "location": [
+    {
+      "city": "beer-shve",
+      "address": "street34"
+    }
+  ],
+  "coordinates": [
+    "15",
+    "65"
+  ],
+  "cuisineType": "asian",
+  "kosher": false,
+  "reviews": {
+    "review1": [
+      {
+        "date": 1,
+        "score": 1
+      },
+      {
+        "date": 2,
+        "score": 2
+      },
+      {
+        "date": 3,
+        "score": 3
+      }
+    ],
+    "review2": [
+      {
+        "date": 1,
+        "score": 1
+      },
+      {
+        "date": 2,
+        "score": 2
+      },
+      {
+        "date": 3,
+        "score": 3
+      }
+    ],
+    "review3": [
+      {
+        "date": 1,
+        "score": 1
+      },
+      {
+        "date": 2,
+        "score": 2
+      },
+      {
+        "date": 3,
+        "score": 3
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "6593d5803d4d79fb4440f3fb"
+  },
+  "name": "resturant3",
+  "location": [
+    {
+      "city": "haifa",
+      "address": "street15"
+    }
+  ],
+  "coordinates": [
+    "38",
+    "19"
+  ],
+  "cuisineType": "asian",
+  "kosher": false,
+  "reviews": {
+    "review1": [
+      {
+        "date": 1,
+        "score": 1
+      },
+      {
+        "date": 2,
+        "score": 2
+      },
+      {
+        "date": 3,
+        "score": 3
+      }
+    ],
+    "review2": [
+      {
+        "date": 1,
+        "score": 1
+      },
+      {
+        "date": 2,
+        "score": 2
+      },
+      {
+        "date": 3,
+        "score": 3
+      }
+    ],
+    "review3": [
+      {
+        "date": 1,
+        "score": 1
+      },
+      {
+        "date": 2,
+        "score": 2
+      },
+      {
+        "date": 3,
+        "score": 3
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "6593d5933d4d79fb4440f3fc"
+  },
+  "name": "resturant4",
+  "location": [
+    {
+      "city": "tel-aviv",
+      "address": "street13"
+    }
+  ],
+  "coordinates": [
+    "55",
+    "11"
+  ],
+  "cuisineType": "euru",
+  "kosher": true,
+  "reviews": {
+    "review1": [
+      {
+        "date": 1,
+        "score": 1
+      },
+      {
+        "date": 2,
+        "score": 2
+      },
+      {
+        "date": 3,
+        "score": 3
+      }
+    ],
+    "review2": [
+      {
+        "date": 1,
+        "score": 1
+      },
+      {
+        "date": 2,
+        "score": 2
+      },
+      {
+        "date": 3,
+        "score": 3
+      }
+    ],
+    "review3": [
+      {
+        "date": 1,
+        "score": 1
+      },
+      {
+        "date": 2,
+        "score": 2
+      },
+      {
+        "date": 3,
+        "score": 3
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "6593d5c73d4d79fb4440f3fd"
+  },
+  "name": "resturant5",
+  "location": [
+    {
+      "city": "tel-aviv",
+      "address": "street90"
+    }
+  ],
+  "coordinates": [
+    "46",
+    "14"
+  ],
+  "cuisineType": "meat",
+  "kosher": false,
+  "reviews": {
+    "review1": [
+      {
+        "date": 1,
+        "score": 1
+      },
+      {
+        "date": 2,
+        "score": 2
+      },
+      {
+        "date": 3,
+        "score": 3
+      }
+    ],
+    "review2": [
+      {
+        "date": 1,
+        "score": 1
+      },
+      {
+        "date": 2,
+        "score": 2
+      },
+      {
+        "date": 3,
+        "score": 3
+      }
+    ],
+    "review3": [
+      {
+        "date": 1,
+        "score": 1
+      },
+      {
+        "date": 2,
+        "score": 2
+      },
+      {
+        "date": 3,
+        "score": 3
+      }
+    ]
+  }
+}]
